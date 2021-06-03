@@ -77,5 +77,3 @@ Tail node links to head node, creating circular linked.
 ## My Favorite Resources
 
 * https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/
-
-*

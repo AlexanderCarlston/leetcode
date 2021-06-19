@@ -74,6 +74,15 @@ Each node points to a previous, and the next node.
 
 Tail node links to head node, creating circular linked.
 
+## Time Complexity
+
+ * Time Complexity:
+   * Access: `O(n)`
+   * Search: `O(n)`
+   * Insert: `O(1)`
+   * Remove: `O(1)`
+
 ## My Favorite Resources
 
 * https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/
+

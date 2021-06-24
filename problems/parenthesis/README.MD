@@ -14,6 +14,12 @@ Creating the heap was easy enough.
 ## Code
 
 ```
+const bracketPairs = {
+    '{': '}',
+    '(': ')',
+    '[': ']'
+}
+
 function isValid(s) {
   if (s.length < 2 ) { return false }
   let pStack = []
@@ -38,21 +44,12 @@ function isValid(s) {
 };
 
 function isOpenBrace(brace) {
-  const validOpenBraces = ['(', '{', '[']
+  const validOpenBraces = Object.keys(bracketPairs)
   return validOpenBraces.includes(brace)
 }
 
 function isValidClosingBrace(openBrace, closeBrace) {
-  switch(openBrace) {
-    case '(':
-      return closeBrace === ')';
-    case '{':
-      return closeBrace === '}';
-    case '[':
-      return closeBrace === ']';
-    default: return false;
-  }
+  return bracketPairs[openBrace] === closeBrace;
 }
-
 
 ```
